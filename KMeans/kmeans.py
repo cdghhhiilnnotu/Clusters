@@ -53,8 +53,7 @@ class KMeans:
         
         clustered_list = np.zeros(self.num_samples)
         for cluster_idx, cluster in enumerate(self.cluster_list):
-            for c in cluster:
-                clustered_list[c] = cluster_idx
+            clustered_list[cluster] = cluster_idx
         
         return clustered_list
 
